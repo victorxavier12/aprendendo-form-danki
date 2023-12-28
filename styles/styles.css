@@ -9,9 +9,9 @@ html, body {
 
 form {
     text-align: center;
-    width: 96%;
     max-width: 600px;
-    margin: 0 auto;
+    width: 96%;
+    margin: 30px auto;
 }
 
 form fieldset {
@@ -32,9 +32,11 @@ form input[type=text], input[type=email] {
     margin-top: 30px;
     width: 80%;
     padding: 10px 13px;
+    border: 1px solid #ccc;
 }
 
-form input[type=text]:focus, input[type=email]:focus, select:focus {
+form input[type=text], input[type=email], select, form textarea {
+    font-family: tahoma;
     outline: 0;
 }
 
@@ -44,6 +46,7 @@ form select {
     padding: 10px 13px;
     margin-top: 30px;
     display: inline-block;
+    border: 1px solid #ccc;
 }
 
 form h2 {
@@ -51,15 +54,40 @@ form h2 {
     color: rgb(100, 100, 100);
 }
 
-.radio-input {
+.radio-input, .checkbox-input {
     display: inline-block;
     text-align: left;
     margin-top: 20px;
 }
 
-.radio-input span {
+.radio-input span , .checkbox-input span {
     margin-left: 13px;
     font-size: 18px;
     color: rgb(130, 130, 130);
 
 }
+
+form textarea {
+
+    box-sizing: border-box;
+    margin-top: 30px;
+    width: 80%;
+    height: 140px;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+form input[type=submit] {
+    margin-top: 30px;
+    border: 0;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    border: 2px solid rgb(130, 130, 130);
+    color: white;
+    background-color: rgb(140, 140, 140);
+    cursor: pointer;
+
+}
+
