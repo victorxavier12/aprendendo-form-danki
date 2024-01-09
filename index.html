@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/stylesreset.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
 <body>
     <form action="">
+
         <fieldset>
             <legend>Meu formulario</legend>
             <div><input type="text" name="nome" placeholder="digite seu nome"></div>
@@ -37,23 +37,25 @@
             <h2>qual você gosta de comer?</h2>
             <div class="checkbox-input">
                 <div>
-                    <input type="checkbox" name="cidade" value="florianópolis"><span>salada</span>
+                    <input type="checkbox" name="comidas[]" value="salada"><span>salada</span>
                 </div>
                 <div>
-                    <input type="checkbox" name="cidade" value="São Paulo"><span>fast food</span>
+                    <input type="checkbox" name="comidas[]" value="fast food"><span>fast food</span>
                 </div>
                 <div>
-                    <input type="checkbox" name="cidade" value="Rio de Janeiro"><span>fruta</span>
+                    <input type="checkbox" name="comidas[]" value="fruta"><span>fruta</span>
                 </div>
             </div>
             <div>
-                <textarea placeholder="possui alguma observação?"></textarea>
+                <textarea name="observacao" placeholder="possui alguma observação?"></textarea>
             </div>
             <div>
                 <input type="submit" name="acao" value="enviar">
-            </div>
+            </div> 
+
         </fieldset>
+
     </form>
+    
 </body>
 </html>
-<!-- finalizou o video aos 17:41 danki code -->

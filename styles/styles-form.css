@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* 
+input[type=file] {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 10px auto;
+    width: 220px;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+} 
+*/
+
+form {
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px 0;
+}
+
+form select {
+    width: 220px;
+    height: 40px;
+    appearance: none;
+    
+}
+
